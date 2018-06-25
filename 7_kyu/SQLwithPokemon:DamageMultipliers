@@ -1,2 +1,3 @@
 -- i choose you! --
 SELECT pokemon.pokemon_name, multipliers.element, pokemon.str FROM pokemon JOIN multipliers ON pokemon.element_id = multipliers.id WHERE str >= 40 ORDER BY str DESC;
+//TO be finished 
