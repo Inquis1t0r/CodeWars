@@ -5,7 +5,7 @@ public static class Kata
 {
   public static int[] Capitals(string word)
   {
-		//Write your code here
+    //Write your code here
     //finish!
     var capitalLetters = word.Where(c => char.IsUpper(c)).ToArray();
     int[] result = new int[capitalLetters.Length];
