@@ -9,8 +9,6 @@ public class Kata
         {
         if(str[i].Equals('-') || str[i].Equals('_'))
           {
-            result += "";
-            //Char.ToUpper(c)
             result += Char.ToUpper(str[i + 1]);
             i++;
           }
