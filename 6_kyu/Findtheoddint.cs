@@ -12,9 +12,8 @@ namespace Solution
     public static int find_it(int[] seq) 
       {
         int result = 0;
-        var groups = seq.GroupBy(z => z);
         
-        foreach(var group in groups)
+        foreach(var group in seq.GroupBy(z => z))
         {
           if(group.Count() % 2 != 0)
           result = group.Key;
