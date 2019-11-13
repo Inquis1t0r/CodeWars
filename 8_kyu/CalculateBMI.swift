@@ -1,8 +1,7 @@
 func bmi(_ weight: Int, _ height: Double) -> String {
-    # your code
     
     var result: String
-    var BMI = Double(weight) / height ^ 2
+    var BMI = Double(weight) / pow(height, 2)
 
     if BMI <= 18.5 {
         result = "Underweight"
