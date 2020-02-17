@@ -1,4 +1,3 @@
 int HowManyLightsabersDoYouOwn(char *name) {
-  // Your code here...
-  strcmp(str1, str2)
+ return (strcmp(name, "Zach")) ? 0 : 18;
 }
