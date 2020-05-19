@@ -6,7 +6,7 @@ public static class Kata
 
   int index = url.IndexOf("#");
   if (index > 0)
-      url = url.Substring(0, url.IndexOf("#"));
+      url = url.Substring(0, index);
       
       return url;
   }
