@@ -1,7 +1,9 @@
+using System.Linq;
+
 public class Kata
 {
   public static int[] Arr(int N)
   {
-    return new int[] { /* the numbers 0 to N-1 */ };
+    return Enumerable.Range(0, N).ToArray();
   }
 }
