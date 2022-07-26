@@ -1,3 +1,7 @@
 func take(_ arr: [Int], _ n: Int) -> [Int] {
-   return Array(arr[..<n])
+  if(arr.count == 0){
+    return []
+  }else{
+    return Array(arr[..<n])
+  }
 }
