@@ -1,4 +1,4 @@
-func findMissingTerm(_ l: [Int]) -> Int? {
+func find_missing(_ l: [Int]) -> Int? {
     let n = l.count
     let commonDiff = (l[n-1] - l[0]) / n // calculate common difference
 
