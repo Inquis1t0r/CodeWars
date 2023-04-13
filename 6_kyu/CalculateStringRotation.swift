@@ -1,3 +1,17 @@
-func shiftedDiff(_ s1: String, _ s2: String) -> Int? {
-
+func shiftedDiff(_ first: String, _ second: String) -> Int? {
+    guard first.count == second.count else {
+        return nil
+    }
+    
+    let combined = first + first
+    for i in 0..<first.count {
+        let index = combined.index(combined.startIndex, offsetBy: i)
+        let substring = combined[index..<combined.index(index, offsetBy: first.count)]
+        
+        if substring == second {
+            return i
+        }
+    }
+    
+    return nil
 }
