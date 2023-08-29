@@ -9,6 +9,7 @@ public class LoveDetector
         bool isPetals2Even = flower2 % 2 == 0;
 
         //return flower1 % 2 != flower2 % 2 ;
+        //return (flower1 + flower2) % 2 == 1;
         return (isPetals1Even && !isPetals2Even) || (!isPetals1Even && isPetals2Even);
     }
 }
