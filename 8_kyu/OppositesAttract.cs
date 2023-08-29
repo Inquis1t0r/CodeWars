@@ -3,6 +3,7 @@ using System;
 public class LoveDetector
 {
     //public static bool lovefunc(int f1, int f2)=>(f1+f2)%2!=0;
+    //public static bool IsEven(int number)=>(number & 1) == 0;
     public static bool lovefunc(int flower1, int flower2)
     { 
         //Moment of truth...
@@ -13,6 +14,7 @@ public class LoveDetector
         //return (flower1 + flower2) % 2 == 1;
         //return Convert.ToBoolean((flower1 ^ flower2) & 1);
         //return ((flower1 ^ flower2) & 1) == 1;
+        //return IsEven(flower1)!=IsEven(flower2);
         return (isPetals1Even && !isPetals2Even) || (!isPetals1Even && isPetals2Even);
     }
 }
