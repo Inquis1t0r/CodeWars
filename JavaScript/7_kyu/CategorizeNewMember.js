@@ -1,9 +1,10 @@
 function openOrSenior(data){
   const resultArray = [];
-  console.dir(data);
+
   for(member of data){
     resultArray.push(isSenior(member) ? 'Senior' : 'Open');
   }
+  
   return resultArray;
 }
 
