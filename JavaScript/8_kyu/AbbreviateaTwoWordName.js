@@ -1,5 +1,5 @@
 function abbrevName(name){
-
-    // code away
-
+  const words = name.split(" ");
+  const firstLetters = words.map(word => word[0].toUpperCase());
+  return firstLetters.join(".");
 }
