@@ -1,3 +1,4 @@
 function removeEveryOther(arr){
-  //your code here
+  const filteredArray = arr.filter((_, index) => index % 2 === 0);
+  return filteredArray;
 }
