@@ -1,7 +1,3 @@
 function solution(nums){
-  if(nums == null){
-    return [];
-  }else{
-    return nums.sort((a, b) => a - b);
-  }
+    return nums == null ? [] : nums.sort((a, b) => a - b);;  
 }
