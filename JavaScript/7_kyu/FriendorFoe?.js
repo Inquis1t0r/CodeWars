@@ -1,3 +1,9 @@
 function friend(friends){
-  //your code here
+  const result = [];
+  for(const friend of friends){
+    if(friend.length === 4){
+      result.push(friend);
+    }
+  }
+  return result;
 }
