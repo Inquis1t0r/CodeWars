@@ -3,4 +3,5 @@ My solutions to codewars.com katas
 
 
 TODO: 
-- [ ] Group solutions by language 
+- [ ] Group solutions by language
+  - [ ] Group by Kyu 
