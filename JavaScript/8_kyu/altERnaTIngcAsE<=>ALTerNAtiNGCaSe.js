@@ -1,3 +1,5 @@
 String.prototype.toAlternatingCase = function () {
-  // Define your method here :)
+    return this.split('').map(char => {
+        return char === char.toLowerCase() ? char.toUpperCase() : char.toLowerCase();
+    }).join('');
 }
