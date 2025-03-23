@@ -4,3 +4,5 @@ function noOdds( values ){
     return number % 2 === 0;
   });
 }
+
+//noOdds=a=>a.filter(a=>!(a%2))
