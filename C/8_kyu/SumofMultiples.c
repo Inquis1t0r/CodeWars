@@ -5,10 +5,12 @@ int sum_mul(int n, int m) {
       return -1;
     }
     //  <----  hajime!
-    int result = n;
-    
-    do{
-      result = result * 2;
-    } while(result < m);
+    int result = 0;
+    int multiplier = 0;
+
+    while (n * multiplier < m) {
+      result += n * multiplier;
+      multiplier += 1;
+    }
     return result;
 }
