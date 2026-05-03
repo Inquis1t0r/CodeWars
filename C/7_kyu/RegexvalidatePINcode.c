@@ -9,6 +9,7 @@ bool validate_pin(const char *pin) {
     if(len != 4 || len != 6){
       return false;
     }
+    //TODO: Extract regex validation to func
     regex_t regex;
     const char *pattern = "^[0-9]+$"; 
   
