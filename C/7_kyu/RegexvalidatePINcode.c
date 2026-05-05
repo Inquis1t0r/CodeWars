@@ -9,9 +9,8 @@ bool validate_pin(const char *pin) {
     if(len != 4 || len != 6){
       return false;
     }
-    //TODO: Extract regex validation to func
     regex_t regex;
-    const char *pattern = "^[0-9]+$"; 
+    const char *pattern = "^([0-9]{4}|[0-9]{6})$"; 
   
     if (regcomp(&regex, pattern, REG_EXTENDED) != 0) {
       fprintf(stderr, "Failed to compile regex\n");
