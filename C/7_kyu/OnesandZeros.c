@@ -3,5 +3,6 @@
 
 unsigned binary_array_to_numbers(const unsigned bits[/*count*/], size_t count)
 {
+	//strcpy? 
 	return 0;
 }
