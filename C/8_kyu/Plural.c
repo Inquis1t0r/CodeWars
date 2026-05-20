@@ -2,5 +2,5 @@
 #include <stddef.h>
 
 bool plural(size_t value) {
-  return false;
+  return value % 2 == 0;
 }
