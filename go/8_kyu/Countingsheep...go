@@ -1,5 +1,11 @@
 package kata
 
 func CountSheeps(numbers []bool) int {
-  return 0 // your code here
+  var i int
+  for x:=0; x < len(numbers); x++{
+      if(numbers[x] == true){
+        i++;
+      }
+    }
+  return i // your code here
 }
