@@ -1,10 +1,9 @@
 package kata
 
-func Maps(x []int) []int {
-	result := make([]int, len(x))
-	for index, element := range x {
-		result[index] = element + element
+func Maps(nums []int) []int {
+	result := make([]int, 0, len(nums))
+	for _, n := range nums {
+		result = append(result, n+n)
 	}
-
 	return result
 }
