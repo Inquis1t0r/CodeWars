@@ -1,10 +1,10 @@
 package kata
- 	
 
 func Maps(x []int) []int {
-  for index,element := range x{
-    x[index]+= element
-  }
-  
-  return x
+	result := make([]int, len(x))
+	for index, element := range x {
+		result[index] = element + element
+	}
+
+	return result
 }
