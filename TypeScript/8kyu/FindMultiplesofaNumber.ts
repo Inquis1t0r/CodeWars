@@ -1,3 +1,7 @@
 export function findMultiples(integer: number, limit: number): number[] {
-  //your code here
+    const result: number[] = [];
+    for (let i = integer; i <= limit; i += integer) {
+      result.push(i);
+    }
+    return result;
 }
